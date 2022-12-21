@@ -1,0 +1,16 @@
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                {% for service in services %}
+                <div class="card">
+                    <div class="box">
+                        <p>{{ service.service_title }}</p>
+                        <div class="text">{{ service.service_description }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+               </div>
+            </div>
+        </div>
+    </section>

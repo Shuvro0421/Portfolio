@@ -1,0 +1,15 @@
+ <section class="hobby" id="hobby">
+    <div class="max-width">
+        <h2 class="title">My Hobbies</h2>
+        <div class="hobby-content">
+            <div class="row">
+                {% for i in hobby %}
+                <div class="column">
+                    <img src="{{ MEDIA_URL }}{{ i.profile_image }}" alt="" width="300px" height="200px">
+                    <div class="text"># {{ i.hobby_list }}</div>
+                </div>
+                {% endfor %}
+            </div>
+                </div>
+            </div>
+  </section>

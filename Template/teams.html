@@ -1,0 +1,16 @@
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My teams</h2>
+            <div class="carousel">
+                {% for team in teams %}
+                <div class="card">
+                    <div class="box">
+                        <img src="{{ MEDIA_URL }}{{ team.profile_image }}">
+                        <div class="text"></div>
+                        <p>{{ team.team_member_name }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            </div>
+    </section>

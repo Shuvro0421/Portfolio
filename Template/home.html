@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    {% include 'header_menu.html' %}
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, this is</div>
+                <div class="text-2">{{ personal_infos.first_name }} {{ personal_infos.last_name }}</div>
+                <div class="text-3">And I'm a <span class = "typing">Web-Developer</span></div>
+                <a href="#contact">Hire me</a>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
